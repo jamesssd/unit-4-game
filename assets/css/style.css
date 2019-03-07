@@ -15,7 +15,7 @@
 .container {
     color: greenyellow;
     background-color: tan;
-    padding: 20px;
+    padding: 5px 0px 50px 0px;
     margin: 10px 0px 10px 0px; 
     width: 500px;
 }
@@ -30,11 +30,14 @@ header {
 }
 
 body {
-    background: url(assets/images/backgroundImage.jpg);
-    height: 850px;
-    width: 850px;
+    height: 650px;
+    width: 650px;
 }
 
+#previous {
+    background: teal;
+    width: 200px;
+}
 #result {
     font-size: 30px;
     width: 200px;
@@ -44,12 +47,13 @@ body {
     background: green;
     padding: 0px;
     margin: 0px;
+    
 }
 
 .score {
     background: lightblue;
     width: 80px;
     height: 100px;
-    line-height: 40px;
+    line-height: 40px;   
 }
 

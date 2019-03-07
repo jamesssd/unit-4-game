@@ -10,14 +10,13 @@
 
 var random_result;
 var lost = 0; 
+
 var win = 0;
 var previous = 0;
 
 var resetAndStart = function () {
     $(".crystals").empty();
 
-    // var images = [ 'Image image = new Image("assets/images/crystal1.jpg"); ', '', '', '',],
-    
     random_result = Math.floor(Math.random() * 69 ) + 30;
 
     $("#result").html('' + random_result);
