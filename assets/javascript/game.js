@@ -16,11 +16,11 @@ var previous = 0;
 var resetAndStart = function () {
     $(".crystals").empty();
 
-    var images = [ '', '', '', '',],
+    // var images = [ 'Image image = new Image("assets/images/crystal1.jpg"); ', '', '', '',],
     
     random_result = Math.floor(Math.random() * 69 ) + 30;
 
-    $("#result").html('Random Result: ' + random_result);
+    $("#result").html('' + random_result);
 
     for (var i = 0; i < 4; i++) {
 
@@ -38,7 +38,7 @@ var resetAndStart = function () {
 
         $(".crystals").append(crystal);    
     }
-    $("#previous").html("Total Score: " + previous);
+    $("#previous").html("Your total score is: " + previous);
 }
 
 resetAndStart();
@@ -50,13 +50,13 @@ $(document).on('click', ".crystal", function() {
    
     previous += num;
 
-    $("#previous").html("Total Score: " + previous);
+    $("#previous").html("Your total score is: " + previous);
 
     console.log(previous)
 
     if(previous > random_result){
 
-        lost--;
+        lost++;
 
         $("#lost").html("You lost!: " + lost);
 
@@ -74,6 +74,7 @@ $(document).on('click', ".crystal", function() {
  
         resetAndStart();
     }
+
 });
 
 

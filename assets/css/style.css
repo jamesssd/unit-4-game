@@ -1,21 +1,55 @@
 .crystal{ 
-    border: 1px solid green;
+    border: 1px solid blue;
     height: 200px;
     width: 200px;
+    margin: 5px; 
 }
 .crystals{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 400px;
 }
 
-background {
-    color: red;
-}
 
-p {
+.container {
     color: greenyellow;
     background-color: tan;
-    padding: 10px;
-    
+    padding: 20px;
+    margin: 10px 0px 10px 0px; 
+    width: 500px;
 }
+
+header {
+    font-size: 20px;
+    background: orange;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    width: 300px;
+    color: white;
+}
+
+body {
+    background: url(assets/images/backgroundImage.jpg);
+    height: 850px;
+    width: 850px;
+}
+
+#result {
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+    color: purple;
+    text-align: left;
+    background: green;
+    padding: 0px;
+    margin: 0px;
+}
+
+.score {
+    background: lightblue;
+    width: 80px;
+    height: 100px;
+    line-height: 40px;
+}
+
